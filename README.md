@@ -4,7 +4,7 @@
 ## 2. Implementation of different categories of operators.
 # Ex.No:1
   Build a C program to demonstrate the usage of different types of literals: integer, float, character, and string.  
-# Date : 
+
 # Aim:
 To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
 # Algorithm:
@@ -25,17 +25,85 @@ To build a C program that prints integer, float,character, and string literals o
    
 ### Step 4: 
    Stop
+
+
+
+
+   
 # Program:
+
+
+
+
+
+   
+    #include <stdio.h>
+
+    int main()
+    {
+   
+        printf("Integer literal: %d\n", 10);
+        printf("Size of integer literal: %zu bytes\n\n", sizeof(10));
+
+        printf("Float literal: %f\n", 3.14f);
+        printf("Size of float literal: %zu bytes\n\n", sizeof(3.14f));
+
+        printf("Character literal: %c\n", 'A');
+        printf("Size of character literal: %zu byte\n\n", sizeof('A'));
+
+        printf("String literal: %s\n", "Hello C");
+        printf("Size of string literal: %zu bytes\n", sizeof("Hello C"));
+
+        return 0;
+    }
+
+
+
 # Output:
+
+
+
+
+
+
+
+
+
+<img width="1620" height="971" alt="image" src="https://github.com/user-attachments/assets/81ec5e4a-7f15-4040-a38d-b9341fbb0c54" />
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Result: 
+
+
 Thus, the program was implemented and executed successfully, and the required output was obtained.
+
+
+
+
+
+
+
 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
 # Ex.No:2
   Build a C program to display the value of a macro constant and a constant variable.
-# Date : 
+
+
+
+
 # Aim:
   To build a C program that demonstrates the use of macro constants and constant variables.
 # Algorithm:
@@ -57,16 +125,74 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+
+
+
+
+
+
+    #include <stdio.h>
+
+    #define PI 3.14159
+
+    int main()
+    {
+        const int DAYS = 7;
+
+        printf("Macro constant PI = %.5f\n", PI);
+        printf("Constant variable DAYS = %d\n", DAYS);
+
+        return 0;
+    }
+
+
+
+
+
+
+
+    
 # Output:
+
+
+
+
+
+
+
+
+
+<img width="1080" height="310" alt="WhatsApp Image 2026-09-22 at 9 32 14 PM" src="https://github.com/user-attachments/assets/9a7dba67-32cd-41f8-b818-d9b80e787928" />
+
+
+
+
+
+
+
+
+
+
+
 # Result: 
+
+
+
 Thus, the program was implemented and executed successfully, and the required output was obtained.
+
+
+
+
+
 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
 # Ex.No:3
   Build a C program to demonstrate the use of different data types such as int, float, double, and char, and display their values using printf().
-# Date : 
+
+
+
 # Aim:
   To build a C program that declares variables of various data types—integer, float, double, and character—initializes them, and prints their values on the screen.
 # Algorithm:
@@ -80,15 +206,84 @@ Thus, the program was implemented and executed successfully, and the required ou
    Display their values using printf().
 ### Step 5:    
    Stop
+   
 # Program:
+
+
+
+
+
+
+    #include <stdio.h>
+
+    int main()
+    {
+        int num = 10;
+        float value = 3.14f;
+        double decimal = 123.456789;
+        char grade = 'A';
+
+        printf("Integer value: %d\n", num);
+        printf("Float value: %.2f\n", value);
+       printf("Double value: %.6lf\n", decimal);
+       printf("Character value: %c\n", grade);
+
+       return 0;
+    }
+
+
+
+
+
+    
 # Output:
+
+
+
+
+
+
+
+
+
+<img width="1080" height="428" alt="WhatsApp Image 2026-09-22 at 9 39 34 PM" src="https://github.com/user-attachments/assets/5a238c60-62c0-49fb-82a6-73447ae244dc" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Result: 
+
+
+
+
+Thus, the program was implemented and executed successfully, and the required output was obtained.
+
+
+
+
+
+
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
 # Ex.No:4
   Build a C program to perform arithmetic and bitwise operations on two integers entered by the user. The program should display: Arithmetic operations: addition, subtraction, multiplication, division, and remainder. Bitwise operations: AND, OR, XOR, left shift, right shift, and NOT.
-# Date : 
+
+
+
+
+
+
 # Aim:
   To build a C program that takes two integers as input and demonstrates the arithmetic and bitwise operations, displaying the results of each operation.
 # Algorithm:
@@ -119,17 +314,115 @@ Thus, the program was implemented and executed successfully, and the required ou
   Display the results of all operations using printf().
 ### Step 8:   
   Stop
+
+
+
+
+
+  
 # Program:
+
+
+
+
+
+
+
+
+
+
+
+    #include <stdio.h>
+
+    int main()
+    {
+        int a, b;
+
+        printf("Enter two integers: ");
+        scanf("%d %d", &a, &b);
+
+        printf("\nArithmetic Operations:\n");
+        printf("Addition = %d\n", a + b);
+        printf("Subtraction = %d\n", a - b);
+        printf("Multiplication = %d\n", a * b);
+
+        if (b != 0)
+        {
+            printf("Division = %d\n", a / b);
+            printf("Remainder = %d\n", a % b);
+        }
+        else
+        {
+           printf("Division and Remainder are not possible with zero.\n");
+        }
+
+        printf("\nBitwise Operations:\n");
+        printf("AND = %d\n", a & b);
+        printf("OR = %d\n", a | b);
+        printf("XOR = %d\n", a ^ b);
+
+       if (b >= 0 && b < (int)(sizeof(int) * 8))
+       {
+           printf("Left Shift = %d\n", a << b);
+           printf("Right Shift = %d\n", a >> b);
+       }
+       else
+       {
+           printf("Shift operations are not possible for this value of b.\n");
+       }
+
+       printf("NOT of a = %d\n", ~a);
+       printf("NOT of b = %d\n", ~b);
+
+       return 0;
+    }
+
+
+
+
+
+
+
 # Output:
+
+
+
+
+
+
+
+
+
+
+
+<img width="1079" height="1063" alt="WhatsApp Image 2026-09-22 at 9 47 00 PM" src="https://github.com/user-attachments/assets/278f3283-2a51-4851-82ed-63117abd5b21" />
+
+
+
+
+
+
+
+
+
+
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
+
 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
 # Ex.No:5
   Develop a C program to check whether a given character is a vowel, consonant, digit, or special symbol using the ternary operator.
-# Date : 
+
+
+
+
+
+ 
 # Aim:
   To develop and implement a C program that classifies a character as a vowel, consonant, digit, or special symbol using the ternary operator.
 # Algorithm:
@@ -165,7 +458,64 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+
+
+
+
+
+
+
+
+```
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    (ch >= '0' && ch <= '9') ?
+        printf("Digit") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+          ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') ?
+            printf("Vowel") : printf("Consonant")) :
+        printf("Special Symbol");
+
+    return 0;
+}
+
+
+
+```
+
+
+
+
+
 # Output:
+
+
+
+
+
+
+
+
+
+<img width="844" height="200" alt="WhatsApp Image 2026-09-22 at 9 52 21 PM" src="https://github.com/user-attachments/assets/e71e09f0-6c61-48c1-a972-c42fffa1a5c5" />
+
+
+
+
+
+
+
+
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
